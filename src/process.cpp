@@ -70,9 +70,9 @@ ProcList *processes;
 
 std::set<pid_t> pidsToWatch;
 
-#define KB (1UL << 10)
-#define MB (1UL << 20)
-#define GB (1UL << 30)
+#define KB 1000UL
+#define MB 1000000UL
+#define GB 1000000000UL
 
 float tomb(u_int64_t bytes) { return ((double)bytes) / MB; }
 float tokb(u_int64_t bytes) { return ((double)bytes) / KB; }
